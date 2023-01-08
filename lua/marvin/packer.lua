@@ -29,11 +29,15 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use{"akinsho/toggleterm.nvim"}
   use {
       'nvim-tree/nvim-tree.lua',
       requires = {
           'nvim-tree/nvim-web-devicons',
       },
       tag = 'nightly'
+  }
+  use {
+      "windwp/nvim-autopairs",
   }
   end)
