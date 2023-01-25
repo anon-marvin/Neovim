@@ -7,6 +7,8 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'CRAG666/code_runner.nvim'
+  use 'folke/which-key.nvim'
   use('olimorris/onedarkpro.nvim')
   use("lukas-reineke/indent-blankline.nvim")
   use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
