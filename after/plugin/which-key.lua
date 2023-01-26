@@ -12,7 +12,8 @@ local mappings={
     s= {":Telescope find_files<cr>" ,"Search"},
     g= {":Telescope live_grep<cr>"  ,"Grep"},
     r= {":RunCode<cr>" , "RunCode"},
-    t={":ToggleTerm<cr>","Split Below"},
+    t={":ToggleTerm<cr>","Terminal"},
+    S={":vsplit<cr>","Split Vertically"},
     f ={toggle_float,"Floating Terminal"}
   }
 local opts={prefix='<leader>'}
