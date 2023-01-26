@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
   use('nvim-lualine/lualine.nvim')
+  use'norcalli/nvim-colorizer.lua'
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
