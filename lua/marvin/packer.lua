@@ -2,6 +2,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use 'onsails/lspkind.nvim'
+  use 'folke/tokyonight.nvim'
   use 'wbthomason/packer.nvim'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -9,6 +10,7 @@ return require('packer').startup(function(use)
   }
   use 'CRAG666/code_runner.nvim'
   use 'folke/which-key.nvim'
+  use 'rcarriga/nvim-notify'
   use('olimorris/onedarkpro.nvim')
   use("lukas-reineke/indent-blankline.nvim")
   use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
@@ -40,6 +42,13 @@ return require('packer').startup(function(use)
       },
       tag = 'nightly'
   }
+use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v<CurrentMajor>.*",
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+})
   use {
       "windwp/nvim-autopairs",
   }

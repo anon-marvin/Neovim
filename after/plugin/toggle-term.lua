@@ -1,9 +1,9 @@
 require"toggleterm".setup {
-  size = 10,
+  size = 15,
   open_mapping = [[<c-\>]],
   shade_filetypes = {},
   shade_terminals = true,
-  shading_factor = '25',
+  shading_factor = '50',
   start_in_insert = true,
   persist_size = true,
   direction = 'horizontal',
