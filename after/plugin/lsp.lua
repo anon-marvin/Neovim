@@ -4,7 +4,6 @@ lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'clangd',
-	'sumneko_lua',
 	'pyright',
 })
 
@@ -59,16 +58,6 @@ vim.diagnostic.config({
 })
 
 
-require'lspconfig'.sumneko_lua.setup {
-    -- ... other configs
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-}
 
 cmp.setup {
   formatting = {

@@ -3,7 +3,9 @@ return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use 'onsails/lspkind.nvim'
   use 'folke/tokyonight.nvim'
+  use 'ray-x/web-tools.nvim'
   use 'wbthomason/packer.nvim'
+  use 'nvim-lualine/lualine.nvim'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  requires = { {'nvim-lua/plenary.nvim'} }
@@ -16,7 +18,6 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
-  use('nvim-lualine/lualine.nvim')
   use'norcalli/nvim-colorizer.lua'
   use {
 	  'VonHeikemen/lsp-zero.nvim',
